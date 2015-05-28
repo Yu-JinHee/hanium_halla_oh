@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/alarmBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/checkBtn"
+        android:layout_below="@+id/checkBtn"
+        android:layout_marginTop="21dp"
+        android:text="alarm" />
+
+    <Button
+        android:id="@+id/checkBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="check" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="167dp"
+        android:text="start" />
+
+</RelativeLayout>

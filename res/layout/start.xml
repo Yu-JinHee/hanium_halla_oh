@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start1"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/hangleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numberBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="82dp"
+        android:text="한글" />
+
+    <Button
+        android:id="@+id/numberBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pictureBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginLeft="32dp"
+        android:text="숫자" />
+
+    <Button
+        android:id="@+id/pictureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hangleBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="63dp"
+        android:text="그림" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/pictureBtn"
+        android:text="뒤로" />
+
+</RelativeLayout>
