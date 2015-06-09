@@ -6,13 +6,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class Hangle extends Activity {
+public class Coupon extends Activity {
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.hangle);
+	    setContentView(R.layout.coupon);
 	    // TODO Auto-generated method stub
 	    /**뒤로가기*/
 	    Button helpback = (Button)findViewById(R.id.backBtn);

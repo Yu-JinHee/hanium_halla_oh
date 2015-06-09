@@ -3,21 +3,24 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/check"
+    android:background="@drawable/coupon"
     android:orientation="vertical" >
-
-    <Button
-        android:id="@+id/couponBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="쿠폰함" />
 
     <Button
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:text="뒤로" />
+
+    <Button
+        android:id="@+id/useBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="172dp"
+        android:text="사용" />
 
 </RelativeLayout>
