@@ -3,10 +3,12 @@ package com.example.halla;
 import java.util.Calendar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class Check extends Activity {
@@ -29,7 +31,15 @@ public class Check extends Activity {
         		finish();
         	}
         });
-        
+        /**버튼 클릭시 페이지 이동*/
+		ImageButton btn1 = (ImageButton)findViewById(R.id.couponBtn);
+		
+        btn1.setOnClickListener(new OnClickListener() {
+        	public void onClick(View v ) {
+        		Intent intent = new Intent(Check.this, Coupon.class);
+        		startActivity(intent);
+        	}
+        });
         /**출석체크*/
         ImageView stemp[]= new ImageView[6];//개구리스티커 배열
         stemp[0] = (ImageView)findViewById(R.id.ImageView01);

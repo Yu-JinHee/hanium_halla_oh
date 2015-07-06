@@ -28,6 +28,7 @@
         <activity android:name="Hangle"></activity>
         <activity android:name="Number"></activity>
         <activity android:name="Picture"></activity>
+        <activity android:name="Coupon"></activity>
     </application>
 
 </manifest>
