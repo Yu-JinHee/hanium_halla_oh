@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="뒤로" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/backBtn"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="144dp"
+        android:layout_toRightOf="@+id/backBtn"
+        android:src="@drawable/frog"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/ImageView02"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginRight="57dp"
+        android:src="@drawable/frog"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ImageView01"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="145dp"
+        android:src="@drawable/frog"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ImageView04"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ImageView02"
+        android:layout_below="@+id/ImageView02"
+        android:layout_marginTop="74dp"
+        android:src="@drawable/frog"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ImageView05"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ImageView03"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/frog"
+        android:visibility="invisible" />
+
+</RelativeLayout>
