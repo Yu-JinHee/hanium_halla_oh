@@ -14,7 +14,7 @@
         android:label="@string/app_name"
 	>
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +29,12 @@
         <activity android:name="Number"></activity>
         <activity android:name="Picture"></activity>
         <activity android:name="Coupon"></activity>
+        <activity android:name="DBhelper"></activity>
+        <activity android:name="DBadapter"></activity>
+        <activity android:name="DataBases"></activity>
+        <activity android:name="MainActivity"></activity>
+        <activity android:name="Join"></activity>
+        <activity android:name="DBManager"></activity>
     </application>
 
 </manifest>

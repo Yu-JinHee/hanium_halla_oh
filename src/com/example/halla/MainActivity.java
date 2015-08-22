@@ -48,6 +48,15 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		/**버튼 클릭시 페이지 이동*/
+		/*로그아웃 버튼*/
+	    Button logout = (Button)findViewById(R.id.logoutBtn);
+        logout.setOnClickListener(new OnClickListener() {
+        	public void onClick(View v ) {
+        		Intent intent = new Intent(MainActivity.this, Login.class);
+        		startActivity(intent);
+        	}
+        });
+		/*메뉴*/
 		Button btn1 = (Button)findViewById(R.id.startBtn);
 		
         btn1.setOnClickListener(new OnClickListener() {

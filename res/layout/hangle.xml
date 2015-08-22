@@ -7,7 +7,7 @@
     android:orientation="vertical" >
 
 <ImageButton
-    android:id="@+id/button1"
+    android:id="@+id/loginBtn"
     android:layout_width="60dp"
     android:layout_height="60dp"
     android:layout_below="@+id/imageView1"

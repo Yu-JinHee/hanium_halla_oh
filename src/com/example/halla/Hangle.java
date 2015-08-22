@@ -1,30 +1,52 @@
 package com.example.halla;
 
 import android.app.Activity;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class Hangle extends Activity {
-	int index = (int)(Math.random()*6);
+/*
+	private static final String TAG = "Hangle";
+	private MySQLiteOpenHelper mDbOpenHelper;
+	private Cursor mCursor;
+//	private InfoClass mInfoClass;
+//	private ArrayList<InfoClass> mInfoArray;
+//	private CustomAdapter mAdapter;
 	
-	int res = array[index];
+	
+	
+*/
+	//int index = (int)(Math.random()*6);
+	
+	//int res = array[index];
 	 public static final int[] array= {
 	  R.drawable.apple, R.drawable.pencil, R.drawable.turtle,
 	  R.drawable.whale, R.drawable.ic_launcher,R.drawable.strawberry};
 	 
 	/** Called when the activity is first created. */
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.hangle);
 	    // TODO Auto-generated method stub
+	    
+	    /**디비*/
+	 // DB Create and Open
+/*
+        mDbOpenHelper = new MySQLiteOpenHelper();
+        mDbOpenHelper.open();
+        
+        mDbOpenHelper.insertColumnHangleT("apple.png","sa.png" , "kwa.png",null);
+        mDbOpenHelper.insertColumnHangleT("pencil.png","yeon.png" , "pil.png",null);
+        mDbOpenHelper.insertColumnHangleT("whale.png","go.png" , "re.png",null);
+        mDbOpenHelper.insertColumnHangleT("turtle.png","gea.png" , "buk.png","lee.png");
+*/
+	    
 	    /**뒤로가기*/
 	    ImageButton helpback = (ImageButton)findViewById(R.id.backBtn);
         helpback.setOnClickListener(new OnClickListener() {
@@ -33,11 +55,7 @@ public class Hangle extends Activity {
         	}
         });
         
-        /**DB연동하기*/
-        MySQLiteOpenHelper DBHelper = new MySQLiteOpenHelper(this);
-        SQLiteDatabase db = DBHelper.getWritableDatabase();
-        db = SQLiteDatabase.openDatabase("data/data/com.example.halla/databases/halla.db", null, SQLiteDatabase.OPEN_READONLY);
- /*   
+     /*   
         Cursor cursor;
 //디비연동이 잘 됬는지 확인하고 쿼리문 맞는지 체크(쿼리는아마 맞을듯?)
        cursor = db.rawQuery("SELECT Q_name FROM hangleT Order by random() limit 1" , null);
@@ -71,7 +89,7 @@ public class Hangle extends Activity {
         imageView1.setImageDrawable(drawable);
       
         /**다음 문제 및 정답확인 버튼기능 추가*/
-        ImageButton btn1 = (ImageButton)findViewById(R.id.button1);
+        ImageButton btn1 = (ImageButton)findViewById(R.id.loginBtn);
         btn1.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
