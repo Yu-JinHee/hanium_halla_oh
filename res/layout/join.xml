@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join" >
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="32dp"
+        android:text="비밀번호 : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="32dp"
+        android:text="아이디 : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="회원가입"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwT"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="확인 : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/nameT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+         />
+
+    <EditText
+        android:id="@+id/idT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="5" />
+
+    <EditText
+        android:id="@+id/pwT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/pwcheckT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/idcheckBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idT"
+        android:layout_alignBottom="@+id/idT"
+        android:layout_toRightOf="@+id/idT"
+        android:text="중복확인" />
+
+    <Button
+        android:id="@+id/completeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/idcheckBtn"
+        android:layout_marginBottom="32dp"
+        android:text="가입하기" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_below="@+id/backBtn"
+        android:text="이름 : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/divisionG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/completeBtn"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView4"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/parentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="부모" />
+
+        <RadioButton
+            android:id="@+id/childBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/pwcheckT"
+        android:layout_marginTop="23dp"
+        android:text="구분 : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
